@@ -1,4 +1,4 @@
-I used a state machine to control the car simply. I did not have time to make left/right movement or a great scene, as I worked by myself, I chose to focus on functionality of the examples., but I implemented acceleration, a top speed and running out of gas using states.
+I used a state machine to control the car simply. I did not have time to make left/right movement, nor did i make a great scene. As I worked by myself, I chose to focus on functionality of the examples. I implemented acceleration, a top speed and running out of gas using states.
 
 The basic pattern of my states is as so:
 
