@@ -30,3 +30,11 @@ When this reaches 0 fuel, it invokes the event, which notifies any methods subsc
 currently i only have 1 method subscribed, but this would allow simultaneous updates to any amount of other things that need to know when the fuel is empty.
 
 I use this pattern here as we really don’t need to be checking the fuel level every single frame, only once the moment it reaches 0 fuel.
+
+
+
+For the Object pool and dirty flag, i combined them into one script.
+the class contains a Dictionary of <gameobject,bool>, with the bool representing the dirty state of the object.
+
+after use, i can just mark the bool true to signal that it is dirty. i can then iterate the dictionary to check for any dirty ones, and do any cleanup required, though in this example game there realy isn't anything i need to do with it, so i just set back clean.
+
